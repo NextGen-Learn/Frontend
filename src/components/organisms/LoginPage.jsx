@@ -1,15 +1,25 @@
 import React from 'react';
-import Text from '../atoms/Text';
 import LoginForm from '../molecules/LoginForm';
+import DownHeader from '../molecules/DownHeader';
+import NawBarLogin from '../molecules/NawBarLogin';
+import './LoginPage.scss';
 
-const LoginPage = () => (
-  <div>
-    <Text type="h1">Вход и регистрация для профи</Text>
-    <Text>Отправим на телефон уведомление для подтверждения входа</Text>
-    <LoginForm />
-    <Text>Восстановить пароль</Text>
-    <Text>Чат с поддержкой</Text>
-  </div>
-);
+const LoginPage = () => {
+  return (
+    <div >
+      <NawBarLogin />
+      
+      <div className="login-page">
+        <div className="form-container">
+          <LoginForm />
+        </div>
+      </div>
+    <div className='down-header'>
+      <DownHeader />
+    </div>
+      
+    </div>
+  );
+};
 
 export default LoginPage;
