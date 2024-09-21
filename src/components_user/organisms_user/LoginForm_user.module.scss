@@ -1,41 +1,38 @@
-.login_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 400px;
-  text-align: center;
-}
-
 .text_login {
-  font-size: 25px;
-  margin-bottom: 72px;
+  font-size: 15px;
+  font-weight: 300px;
+  margin-bottom: 10px; 
   font-family: 'Inter', sans-serif;
   white-space: nowrap;
+}
+
+.text_login_info {
+  font-size: 12px;
+  color: #7e7b7b;
+}
+
+.separator {
+  width: 472px;
+  border: none; 
+  height: 1px;
+  background-color: #cdc9c9;
+  margin: 10px -16px; 
 }
 
 .input_button_container {
   display: flex;
   flex-direction: column;
-  /* Вертикальное расположение */
-  width: 100%;
-  /* Занимает полную ширину */
-  border: 1px solid #ccc;
-  /* Граница для прямоугольника */
-  padding: 16px;
-  /* Отступы внутри прямоугольника */
-  border-radius: 8px;
-  /* Скругленные углы */
-}
-
-.input_button_container InputField {
-  margin-bottom: 16px;
-  /* Отступ между InputField и Button */
+  width: 440px; 
+  background-color: #ffffff;
+  padding: 16px; 
+  border-radius: 10px;
+  box-shadow: none;
 }
 
 .login_button {
   background: #EEEEEE;
   color: #000000;
+  width: 420px;
 
   &:hover {
     background-color: #d3d3d3;

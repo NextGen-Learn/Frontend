@@ -30,7 +30,7 @@
   left: 10px;
   top: 25px;
   font-size: 16px;
-  color: #999; // Серый цвет для placeholder
+  color: #999;
   transition: 0.2s ease all;
 }
 
@@ -38,5 +38,5 @@
 .input-field:not(:placeholder-shown)+.placeholder {
   top: 10px;
   font-size: 12px;
-  color: #007BFF; // Цвет при фокусе
+  color: #007BFF;
 }

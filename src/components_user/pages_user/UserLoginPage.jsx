@@ -14,10 +14,8 @@ export const UserLoginPage = () => {
           <LoginFormUser />
         </div>
       </div>
-      <div className='down-header'>
-        <DownHeader />
-      </div>
 
+        <DownHeader />
     </div>
   );
 };
