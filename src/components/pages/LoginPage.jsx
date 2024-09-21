@@ -1,23 +1,23 @@
 import React from 'react';
-import LoginForm from '../molecules/LoginForm';
-import DownHeader from '../molecules/DownHeader';
+import LoginForm from '../organisms/LoginForm';
+import DownHeader from '../molecules/footer/DownHeader';
 import NawBarLogin from '../molecules/NawBarLogin';
-import './LoginPage.scss';
+import styles from './LoginPage.scss';
 
 const LoginPage = () => {
   return (
     <div >
       <NawBarLogin />
-      
+
       <div className="login-page">
         <div className="form-container">
           <LoginForm />
         </div>
       </div>
-    <div className='down-header'>
-      <DownHeader />
-    </div>
-      
+      <div className={styles.down_header}>
+        <DownHeader />
+      </div>
+
     </div>
   );
 };
