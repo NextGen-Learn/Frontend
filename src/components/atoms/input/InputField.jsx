@@ -1,18 +1,19 @@
 import React from 'react';
-import './InputField.scss';
+import './InputField.module.scss';
 
 const InputField = ({ placeholder, type }) => {
+
   return (
     <div className="input-container">
-      <input 
+      <input
         className="input-field"
         type={type || 'text'}
         placeholder=" "
-        required 
+        required
       />
       <label className="placeholder">{placeholder}</label>
     </div>
   );
 };
 
-export default InputField;
+export default InputField;  

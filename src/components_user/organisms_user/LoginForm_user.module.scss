@@ -1,4 +1,4 @@
-.login-form {
+.login_form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,14 +7,14 @@
   text-align: center;
 }
 
-.text-login {
-  font-size: 48px;
+.text_login {
+  font-size: 25px;
   margin-bottom: 72px;
   font-family: 'Inter', sans-serif;
   white-space: nowrap;
 }
 
-.input-button-container {
+.input_button_container {
   display: flex;
   flex-direction: column;
   /* Вертикальное расположение */
@@ -28,7 +28,16 @@
   /* Скругленные углы */
 }
 
-.input-button-container InputField {
+.input_button_container InputField {
   margin-bottom: 16px;
   /* Отступ между InputField и Button */
+}
+
+.login_button {
+  background: #EEEEEE;
+  color: #000000;
+
+  &:hover {
+    background-color: #d3d3d3;
+  }
 }

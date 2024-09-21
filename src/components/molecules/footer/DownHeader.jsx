@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './DownHeader.scss';
+import './DownHeader.scss'
+
 
 const DownHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+
 
   const toggleMenu = () => {
     setMenuOpen(prevState => !prevState);
@@ -13,7 +15,7 @@ const DownHeader = () => {
   };
 
   return (
-    <div className="down-header">
+    <div className='down_header'>
       <div className="column first-column">
         <a className="link" href="#new-order">Новый заказ</a>
         <div className="catalog" onClick={toggleMenu}>
@@ -44,7 +46,7 @@ const DownHeader = () => {
         <span>Служба поддержки:</span>
         <p><a className="link" href="#contacts">+375(29)577-37-87</a></p>
         <p><a className="link" href="#weekdays">mkomp06@gmail.com</a></p>
-        
+
         <div className="social-icons">
           <a href="https://t.me/your-telegram-handle" target="_blank" rel="noopener noreferrer" className="social-icon">
             <i className="fab fa-telegram-plane"></i>

@@ -1,6 +1,6 @@
 import React from 'react';
-import InputField from '../atoms/InputField';
-import Button from '../atoms/Button';
+import InputField from '../atoms/input/InputField';
+import Button from '../atoms/button/Button';
 import './LoginForm.scss';
 
 const LoginForm = () => {
@@ -10,7 +10,7 @@ const LoginForm = () => {
 
       <InputField placeholder="Логин или телефон" />
 
-      <div className="button-container"> 
+      <div className="button-container">
         <Button text="Продолжить" />
       </div>
 

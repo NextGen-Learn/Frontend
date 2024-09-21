@@ -1,17 +1,17 @@
 import React from 'react';
-import LoginForm from '../molecules_user/LoginForm_user';
-import DownHeader from '../molecules_user/DownHeader';
+import { LoginFormUser } from '../organisms_user/LoginForm_user';
+import DownHeader from '../../components/molecules/footer/DownHeader';
 import NawBarLogin from '../molecules_user/NawBarLogin_user';
 import './UserLoginPage.scss';
 
-const LoginPage = () => {
+export const UserLoginPage = () => {
   return (
     <div >
       <NawBarLogin />
 
       <div className="login-page">
         <div className="form-container">
-          <LoginForm />
+          <LoginFormUser />
         </div>
       </div>
       <div className='down-header'>
@@ -22,4 +22,3 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
