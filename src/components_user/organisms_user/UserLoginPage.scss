@@ -1,0 +1,21 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f9f9f9;
+  margin-bottom: -200px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+}

@@ -1,0 +1,34 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  text-align: center;
+}
+
+.text-login {
+  font-size: 48px;
+  margin-bottom: 72px;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+}
+
+.input-button-container {
+  display: flex;
+  flex-direction: column;
+  /* Вертикальное расположение */
+  width: 100%;
+  /* Занимает полную ширину */
+  border: 1px solid #ccc;
+  /* Граница для прямоугольника */
+  padding: 16px;
+  /* Отступы внутри прямоугольника */
+  border-radius: 8px;
+  /* Скругленные углы */
+}
+
+.input-button-container InputField {
+  margin-bottom: 16px;
+  /* Отступ между InputField и Button */
+}

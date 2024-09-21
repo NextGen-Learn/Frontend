@@ -1,9 +1,9 @@
-.button {
+.button_user {
   width: 106%;
   height: 72px;
   padding: 10px;
-  background-color: black;
-  color: white;
+  background-color: rgb(247, 5, 5);
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 10px;
   font-size: 16px;
@@ -12,7 +12,7 @@
   transition: background-color 0.3s, transform 0.2s;
 
   &:hover {
-    background-color: #363637;
+    background-color: #c9c9c9;
   }
 
   &:active {
