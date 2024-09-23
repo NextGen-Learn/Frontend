@@ -1,0 +1,19 @@
+.rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 625px;
+  height: 86px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-text {
+  flex-grow: 1;
+  margin-right: 135px;
+}
+
+.button {
+  margin-right: 1px;
+}

@@ -1,0 +1,77 @@
+.user-profile-container {
+  display: flex;
+}
+
+.sidebar {
+  margin-top: 20px;
+  width: 240px;
+  margin-left: 113px;
+  padding: 20px;
+}
+
+.sidebar-link {
+  margin-left: -10px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Плавные переходы */
+}
+
+.sidebar-link:hover {
+  color: #FF0000;
+  /* Изменение цвета текста при наведении */
+  transform: scale(1.05);
+  /* Увеличение при наведении */
+}
+
+.arrow {
+  margin-right: -60px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.back-button {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  /* Для анимации */
+  overflow: hidden;
+  /* Скрытие лишнего при анимации */
+
+  &:hover {
+    background-color: #FF0000;
+    /* Эффект при наведении */
+    animation: pulse 0.6s infinite;
+    /* Анимация пульсации */
+    box-shadow: 0 0 20px #FF0000;
+    /* Тень при наведении */
+  }
+}
+
+/* Анимация пульсации */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

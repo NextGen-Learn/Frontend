@@ -1,0 +1,29 @@
+.rating-bar {
+  display: flex;
+  align-items: center;
+
+  .stars {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .bar {
+    width: 150px;
+    height: 10px;
+    background-color: #e0e0e0;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 5px;
+
+    .filled {
+      background-color: #FFD700;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    color: #333;
+  }
+}
