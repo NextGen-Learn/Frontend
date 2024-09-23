@@ -1,0 +1,25 @@
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+
+  .info {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .rating {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+
+      span:first-child {
+        font-weight: bold;
+        color: #ff4d4f;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.review-item {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+
+    .review-date {
+      font-weight: bold;
+    }
+
+    .review-subject {
+      font-style: italic;
+    }
+  }
+
+  .review-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+}
