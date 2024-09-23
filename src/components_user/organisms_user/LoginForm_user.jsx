@@ -3,14 +3,14 @@ import InputField from '../atoms_user/InputField';
 import styles from './LoginForm_user.module.scss';
 import Button from '../../components/atoms/button/Button';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Импортируем useNavigate
 
 const LoginFormUser = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate(); // Инициализируем useNavigate
 
-  console.log(email)
-  console.log(password)
   const handleLogin = async () => {
     setError(''); // Сбрасываем ошибку при новом запросе
     try {
@@ -21,6 +21,11 @@ const LoginFormUser = () => {
 
       console.log(response.data);
       // Здесь можно сохранить токен или данные пользователя в localStorage, если они у вас есть.
+      // Если есть токен:
+      // localStorage.setItem('token', response.data.token);
+
+      // Перенаправляем пользователя на главную страницу
+      navigate('/cabinet/user'); // Замените '/' на путь к вашей главной странице, если он отличается
 
     } catch (err) {
       setError('Неправильный email или пароль');
