@@ -5,15 +5,17 @@ import LoginPage from './components/pages/LoginPage';
 import '@fortawesome/fontawesome-free/css/all.css';
 import { UserLoginPage } from './components_user/pages_user/UserLoginPage';
 import UserProfile from './components_user_profile/pages/Profile';
+import { RegisteUser } from './components_user/pages_user/RegisteUser';
 
 const App = () => {
   return (
-    <Router> {/* Wrap your routes in a Router */}
+    <Router>
       <div className="App">
-        <Routes> {/* Use Routes instead of Switch */}
+        <Routes>
           <Route path="/cabinet/tutor/login" element={<LoginPage />} />
           <Route path="/cabinet/user/login" element={<UserLoginPage />} />
           <Route path="/cabinet/user" element={<UserProfile />} />
+          <Route path="/cabinet/user/register" element={<RegisteUser />} />
         </Routes>
       </div>
     </Router>
