@@ -11,8 +11,8 @@ const NawBarLogin = () => {
         <Logo className={styles.user_logo} />
       </div>
       <div className="navbar-right">
-        <a href="/specialists" className="navbar-link">Вход для специалистов</a>
-        <a href="/students" className="navbar-link">Вход для учеников</a>
+        <a href="/cabinet/tutor/login" className="navbar-link">Вход для специалистов</a>
+        <a href="/cabinet/user/login" className="navbar-link">Вход для учеников</a>
       </div>
     </div>
   );
