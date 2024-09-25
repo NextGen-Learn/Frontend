@@ -1,0 +1,19 @@
+.review-section {
+  .review {
+    margin: 10px 0;
+
+    .rating {
+      display: flex;
+
+      .review-star {
+        color: gold;
+        margin-right: 5px;
+      }
+    }
+
+    .author {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  }
+}
