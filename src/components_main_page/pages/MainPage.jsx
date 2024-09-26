@@ -6,6 +6,9 @@ import HowItWorks from '../organisms/HowItWorks';
 import ReviewSection from '../organisms/ReviewSection';
 import NawBarLogin from '../../components_user/molecules_user/NawBarLogin_user';
 import DownHeader from '../../components/molecules/footer/DownHeader';
+import Heading from '../atoms/Heading';
+import SubHeading from '../atoms/SubHeading';
+import CategoriesSection from '../organisms/CategoriesSection';
 import './MainPage.scss';
 
 const LoginPage = () => {
@@ -24,7 +27,10 @@ const LoginPage = () => {
         <div className="teacher-cards">
           <TeacherCard />
         </div>
-        <HowItWorks />
+        <Heading />
+        <SubHeading />
+        <CategoriesSection />
+        <HowItWorks className="how-it-works" />
         <ReviewSection reviews={reviews} />
       </div>
 

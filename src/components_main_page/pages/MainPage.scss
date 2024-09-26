@@ -18,6 +18,7 @@ h1 {
   align-items: center;
   justify-content: center;
   height: calc(100vh - 200px);
+
 }
 
 .header-title {
@@ -28,9 +29,35 @@ h1 {
   padding: 0; // Remove any default padding
   text-align: left; // Align left
   width: 100%; // Make sure it stretches full width
+  margin-bottom: 87px;
 }
 
 .main-page {
   padding-left: 215px; // Optional: some left padding for aesthetics
   padding-right: 242px; // Optional: some right padding for aesthetics
+}
+
+.search-bar {
+  margin-bottom: 17px; // Отступ под поисковой строкой
+}
+
+.teacher-cards {
+  margin-top: 127px;
+  margin-bottom: 165px; // Отступ под карточками учителей
+}
+
+.heading {
+  margin-bottom: 53px; // Отступ под заголовком
+}
+
+.sub-heading {
+  margin-bottom: 69px; // Отступ под подзаголовком
+}
+
+.categories-section {
+  margin-bottom: 165px; // Отступ для секции категорий
+}
+
+.how-it-works {
+  margin-bottom: 165px;
 }
