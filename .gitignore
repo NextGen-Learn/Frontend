@@ -36,3 +36,5 @@ Desktop.ini
 
 # Сборка TypeScript
 *.tsbuildinfo
+
+*storybook.log
